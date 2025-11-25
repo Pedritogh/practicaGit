@@ -32,8 +32,11 @@
             this.txtTelegrama = new System.Windows.Forms.TextBox();
             this.lblcoste = new System.Windows.Forms.Label();
             this.btnCalcularPrecio = new System.Windows.Forms.Button();
-            this.chkUrgente = new System.Windows.Forms.CheckBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.rbOrdinario = new System.Windows.Forms.RadioButton();
+            this.rbUrgente = new System.Windows.Forms.RadioButton();
+            this.gbSeleccion = new System.Windows.Forms.GroupBox();
+            this.gbSeleccion.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbltexto
@@ -77,17 +80,6 @@
             this.btnCalcularPrecio.UseVisualStyleBackColor = true;
             this.btnCalcularPrecio.Click += new System.EventHandler(this.btnCalcularPrecio_Click);
             // 
-            // chkUrgente
-            // 
-            this.chkUrgente.AutoSize = true;
-            this.chkUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkUrgente.Location = new System.Drawing.Point(128, 305);
-            this.chkUrgente.Name = "chkUrgente";
-            this.chkUrgente.Size = new System.Drawing.Size(110, 24);
-            this.chkUrgente.TabIndex = 4;
-            this.chkUrgente.Text = "Urgente?";
-            this.chkUrgente.UseVisualStyleBackColor = true;
-            // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(236, 361);
@@ -95,19 +87,55 @@
             this.txtPrecio.Size = new System.Drawing.Size(123, 26);
             this.txtPrecio.TabIndex = 5;
             // 
+            // rbOrdinario
+            // 
+            this.rbOrdinario.AutoSize = true;
+            this.rbOrdinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOrdinario.Location = new System.Drawing.Point(21, 25);
+            this.rbOrdinario.Name = "rbOrdinario";
+            this.rbOrdinario.Size = new System.Drawing.Size(107, 24);
+            this.rbOrdinario.TabIndex = 6;
+            this.rbOrdinario.TabStop = true;
+            this.rbOrdinario.Text = "Ordinario";
+            this.rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            this.rbUrgente.AutoSize = true;
+            this.rbUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbUrgente.Location = new System.Drawing.Point(134, 25);
+            this.rbUrgente.Name = "rbUrgente";
+            this.rbUrgente.Size = new System.Drawing.Size(99, 24);
+            this.rbUrgente.TabIndex = 7;
+            this.rbUrgente.TabStop = true;
+            this.rbUrgente.Text = "Urgente";
+            this.rbUrgente.UseVisualStyleBackColor = true;
+            // 
+            // gbSeleccion
+            // 
+            this.gbSeleccion.Controls.Add(this.rbOrdinario);
+            this.gbSeleccion.Controls.Add(this.rbUrgente);
+            this.gbSeleccion.Location = new System.Drawing.Point(124, 281);
+            this.gbSeleccion.Name = "gbSeleccion";
+            this.gbSeleccion.Size = new System.Drawing.Size(257, 68);
+            this.gbSeleccion.TabIndex = 8;
+            this.gbSeleccion.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gbSeleccion);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.chkUrgente);
             this.Controls.Add(this.btnCalcularPrecio);
             this.Controls.Add(this.lblcoste);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.lbltexto);
             this.Name = "Form1";
             this.Text = "ejercicioTelegrama";
+            this.gbSeleccion.ResumeLayout(false);
+            this.gbSeleccion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,8 +147,10 @@
         private System.Windows.Forms.TextBox txtTelegrama;
         private System.Windows.Forms.Label lblcoste;
         private System.Windows.Forms.Button btnCalcularPrecio;
-        private System.Windows.Forms.CheckBox chkUrgente;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.RadioButton rbOrdinario;
+        private System.Windows.Forms.RadioButton rbUrgente;
+        private System.Windows.Forms.GroupBox gbSeleccion;
     }
 }
 
