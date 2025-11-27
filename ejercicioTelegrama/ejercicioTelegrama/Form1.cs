@@ -31,11 +31,11 @@ namespace ejercicioTelegrama
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (chkUrgente.Checked)
+            if (rbUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
-            else
+            else if (rbOrdinario.Checked)
             {
                 tipoTelegrama = 'o';
             }
@@ -76,7 +76,7 @@ namespace ejercicioTelegrama
                     coste = 0;
                 }
             }
-            txtTelegrama.Text = coste.ToString() + " euros";
+            txtPrecio.Text = coste.ToString() + " euros";
         }
 
     }
